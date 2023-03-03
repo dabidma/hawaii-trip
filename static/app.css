@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'IBM Plex Serif', serif;
+    height: 100vh;
+    background-color: aliceblue;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.planner-container, 
+.activity-container {
+    height: 100vh;
+    width: 27vw;
+    min-width: 400px;
+}
+
+header {
+    background-color: cadetblue;
+    position: static;
+    top: 0;
+    width: auto;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.show-itineraries {
+    font-size: 1rem;
+    border-radius: 4px;
+    place-items: center;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.planner-container {
+    background-color: beige;
+    padding: 1.5rem .75rem 1.5rem 1.5rem;
+    display: flex;
+    -webkit-box-oreint: vertical;
+     -ms-flex-direction: column;
+        flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+}
+
+.title {
+    background-color: coral;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+
+
+.staying {
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+    outline: 0;
+    padding: 5px 20px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.activity-container {
+    height: 100vh;
+    width: 27vw;
+    min-width: 400px;
+    padding: 1.5rem 1.5rem 1.5rem .75rem;
+    -webkit-box-shadow: 8px 0 10px -6px rgba(0, 0, 0, 0.3);
+            box-shadow: 8px 0 10px -6px rgba(0, 0, 0, 0.3);
+}
+
+#map {
+    width: 46vw;
+    height: 100vh;
+}
